@@ -22,14 +22,16 @@ public class Mover : MonoBehaviour
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
-        Debug.Log(moveInput);
     }
 
     void Move()
     {
-        Vector3 playerVelocity = new Vector3 (  moveInput.x * moveSpeed * Time.deltaTime, 
-                                                myRigidBody.velocity.y,     
-                                                moveInput.y * moveSpeed * Time.deltaTime);
+        Vector3 playerVelocity = new Vector3 
+        (  
+            moveInput.x * moveSpeed * Time.deltaTime, 
+            myRigidBody.velocity.y,     
+            moveInput.y * moveSpeed * Time.deltaTime
+        );
 
         myRigidBody.velocity = playerVelocity;
     }
