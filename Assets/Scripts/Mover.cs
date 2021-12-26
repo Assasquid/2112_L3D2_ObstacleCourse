@@ -14,7 +14,7 @@ public class Mover : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
