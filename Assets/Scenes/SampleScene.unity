@@ -9539,7 +9539,7 @@ PrefabInstance:
     - target: {fileID: 876321524924885900, guid: 95535c7d70a38704e84ef4044b1af119, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 13400000, guid: 34654b2f1d3b3024ca54c8f4d0725c45, type: 2}
     - target: {fileID: 1326970464743145659, guid: 95535c7d70a38704e84ef4044b1af119, type: 3}
       propertyPath: spinSpeed
       value: 100
@@ -9547,6 +9547,10 @@ PrefabInstance:
     - target: {fileID: 2457970225473408734, guid: 95535c7d70a38704e84ef4044b1af119, type: 3}
       propertyPath: m_Name
       value: Rotating Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457970225473408734, guid: 95535c7d70a38704e84ef4044b1af119, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6795257286889910518, guid: 95535c7d70a38704e84ef4044b1af119, type: 3}
       propertyPath: m_RootOrder
@@ -11251,7 +11255,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2457970225473408734, guid: 95535c7d70a38704e84ef4044b1af119, type: 3}
   m_PrefabInstance: {fileID: 1554742065}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1719101107
+--- !u!54 &1719101115
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11266,7 +11270,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 94
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!1 &1724011929
 GameObject:
   m_ObjectHideFlags: 0
