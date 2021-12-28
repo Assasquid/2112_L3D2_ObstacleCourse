@@ -6,7 +6,7 @@ public class Spinner : MonoBehaviour
 {
     [SerializeField] float spinSpeed;
 
-    void FixedUpdate()
+    void Update()
     {
         transform.Rotate
         (
