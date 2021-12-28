@@ -5,8 +5,16 @@ using UnityEngine;
 public class Spinner : MonoBehaviour
 {
     [SerializeField] float spinSpeed;
+    // Rigidbody rigidBody;
+    // Vector3 eulerAngleVelocity;
 
-    void Update()
+    // void Start()
+    // {
+    //     rigidBody = GetComponent<Rigidbody>();
+    //     eulerAngleVelocity = new Vector3(0, spinSpeed,0);
+    // }
+    
+    void FixedUpdate()
     {
         transform.Rotate
         (
@@ -14,5 +22,7 @@ public class Spinner : MonoBehaviour
             -spinSpeed * Time.deltaTime, 
             transform.rotation.z
         );
+        // Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime);
+        // rigidBody.MoveRotation(rigidBody.rotation * deltaRotation);
     }
 }
